@@ -2,8 +2,9 @@ set tw=80
 set tabstop=4
 set shiftwidth=4
 set scrolloff=10
-set sidescrolloff=20
+set sidescrolloff=5
 set number
+set nowrap
 
 " BUFFERS
 nnoremap <C-n> :bnext<CR>
