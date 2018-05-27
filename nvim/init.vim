@@ -18,6 +18,7 @@ Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
+Plug 'kristijanhusak/vim-hybrid-material'
 
 call plug#end()
 
@@ -28,7 +29,20 @@ if (has("termguicolors"))
 	set termguicolors
 endif
 syntax enable
-colorscheme OceanicNext
+
+"" The following settings are for OceanicNext
+" colorscheme OceanicNext
+
+"" The following settings are for Hybrid colorscheme
+let g:enable_bold_font = 1
+let g:enable_italic_font = 1
+set background=dark
+" colorscheme hybrid_material
+colorscheme hybrid_reverse
+let g:airline_theme = "hybrid"
+
+"" Transparency
+hi Normal guibg=None ctermbg=None
 
 " rainbow parens
 let g:rainbow_active = 1
