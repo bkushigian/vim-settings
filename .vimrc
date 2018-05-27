@@ -1,10 +1,17 @@
 set tw=80
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
+set expandtab
 set scrolloff=10
 set sidescrolloff=5
 set number
+set relativenumber
 set nowrap
+set cursorline
+
+" Handy Shortcut
+nmap <C-j> i<CR><ESC>
+nmap <C-S-j> <CR><ESC>
 
 " BUFFERS
 nnoremap <C-n> :bnext<CR>
@@ -21,11 +28,12 @@ let mapleader = ","
 " NERDTree
 map <leader>n :NERDTreeToggle<CR>
 
-" Powerline
 
+
+" Powerline
 let g:Powerline_symbols = 'fancy'
 set t_Co=256
-set fillchars+=stl:\ ,stlnc:\
+"set fillchars+=stl:\ ,stlnc:\
 
   if !exists('g:airline_symbols')
     let g:airline_symbols = {}

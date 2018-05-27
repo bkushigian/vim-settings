@@ -1,6 +1,9 @@
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
 
+" normal VIMRC Input
+source ~/.config/nvim/.vimrc
+
 let mapleader = ","
 
 " vim-plug
@@ -34,19 +37,19 @@ syntax enable
 " colorscheme OceanicNext
 
 "" The following settings are for Hybrid colorscheme
-let g:enable_bold_font = 1
-let g:enable_italic_font = 1
-set background=dark
 " colorscheme hybrid_material
 colorscheme hybrid_reverse
 let g:airline_theme = "hybrid"
-
-"" Transparency
 hi Normal guibg=None ctermbg=None
+
+set background=dark
+let g:enable_bold_font = 1
+let g:enable_italic_font = 1
 
 " rainbow parens
 let g:rainbow_active = 1
 autocmd VimEnter * RainbowToggle
+RainbowToggleOn()
 
-" normal VIMRC Input
-source ~/.config/nvim/.vimrc
+" Handy Shortcut
+nmap <C-j> i<CR><ESC>
