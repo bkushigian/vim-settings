@@ -1,5 +1,7 @@
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
+set path+=**
+set tags=./tags;,tags;
 
 let mapleader = ","
 let maplocalleader = ","
@@ -8,6 +10,7 @@ let maplocalleader = ","
 call plug#begin('~/.vim/plugged')
 
 Plug 'guns/vim-sexp'
+Plug 'neovimhaskell/haskell-vim'
 Plug 'luochen1990/rainbow'
 Plug 'mhartington/oceanic-next'
 Plug 'neomake/neomake'
@@ -21,6 +24,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
 Plug 'kristijanhusak/vim-hybrid-material'
 Plug 'tounaishouta/coq.vim'
+Plug 'https://github.com/idris-hackers/idris-vim'
+Plug 'https://github.com/Shougo/vimshell.vim'
 
 call plug#end()
 
