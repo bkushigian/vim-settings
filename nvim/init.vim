@@ -26,6 +26,8 @@ Plug 'kristijanhusak/vim-hybrid-material'
 Plug 'tounaishouta/coq.vim'
 Plug 'https://github.com/idris-hackers/idris-vim'
 Plug 'https://github.com/Shougo/vimshell.vim'
+Plug 'https://github.com/jrozner/vim-antlr'
+Plug 'https://github.com/gokcehan/vim-opex'
 
 call plug#end()
 
@@ -73,5 +75,6 @@ let g:neomake_open_list=2
 
 " Highlighting
 " Match all trailing whitespace
+"
 highlight TrailingWS ctermbg=red guibg=maroon
 match TrailingWS /\s\+$/
